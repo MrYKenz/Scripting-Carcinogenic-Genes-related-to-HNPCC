@@ -2,19 +2,28 @@
 Differential Expression Analysis of Carcinogenic Genes in R language used in a Bioinformatics Experiment
 
 The finishing touch in the Tuxedo workflow, cummerbund, has been used to analyse, manipulate, and visualise the output of cufflinks represented in the database using the ggplot2 package. The data was first analysed at gene level before plotting distributions of expression data for genes, splice isoforms, TSS groups or CDS groups. 
- 
+
+```
 dns <- csDensity(genes(cuff_data))
+```
+
 Density plot distribution of expression levels for each sample at gene level. Creating a smoothed density plot for each sample in log10 FPKM values from a cuffdiff run. The log10 of the fragments per kilo-base of transcripts per Million mapped reads of the RNA-seq data quantifies the relative expression of a transcript that is proportional to the number of cDNA fragments that it originates from. This is produced by the csDenisty function which has been stored in the dns object created in the above example code.
- 
+
+'''
 sct <- csScatter(genes(cuff_data),'wt','hnpcc')
+'''
+
 Scatter plot comparing the expression of each gene in two different conditions. CummeRbund scatter plots highlight general similarities and explicit outliers between conditions WT and HNPCC to display from expression data at gene level. Comparing the FPKM values from the two cuffdiff samples.
 
- 
-
+```
 vol <- csVolcano(genes(cuff_data),'wt','hnpcc')
+```
+
 Volcano plot to inspect differentially expressed genes of fold change against significance for a pairwise comparison of genes and features across two different pairs of samples. Creating a log fold change in expression versus the - log10 (p value) for the pairs of samples plotted in the (x,y) axis. Includes all fields from the features slot in the returned ggplot2 object. Created by the csVolcano function and stored within the created variable (vol).
- 
+
+```
 fpkmSCVPlot(genes(cuff_data))
+```
 SCV plot to evaluate quality of RNA-seq data by using the squared coefficient of variation (CV) as a normalised measure of cross-replicate variability. CV also known as relative standard deviation (RSD) is a standardised measure of dispersion of a probability/frequency distribution. The distribution is made to conform to the standard. 
 
  
