@@ -13,7 +13,7 @@ Density plot distribution of expression levels for each sample at gene level. Cr
 sct <- csScatter(genes(cuff_data),'wt','hnpcc')
 ```
 
-Scatter plot comparing the expression of each gene in two different conditions. CummeRbund scatter plots highlight general similarities and explicit outliers between conditions WT and HNPCC to display from expression data at gene level. Comparing the FPKM values from the two cuffdiff samples.
+Scatter plot comparing the expression of each gene in two different conditions. CummeRbund scatter plots highlight general similarities and explicit outliers between conditions WT (Wild Type - non-cancerous) and HNPCC (hereditary nonpolyposis colorectal cancer) to display from expression data at gene level. Comparing the FPKM values from the two cuffdiff samples.
 
 ```R
 vol <- csVolcano(genes(cuff_data),'wt','hnpcc')
@@ -30,7 +30,7 @@ SCV plot to evaluate quality of RNA-seq data by using the squared coefficient of
 
 
  
-Retrieved from the cuff_data object is all info on the specified gene and with that bar plots were generated to analyse expression levels of the gene in interest, MLH1 (gene1). At gene level MLH1 shows slightly greater association in terms of FPKM however with this differs at transcript levels.  It is higher in the HNPCC condition for all isoform samples except for P28502, similarly with TSS22230 and NM_001167619 in the CDS and TSS sites. Moreover, there is constant FPKM in the HNPCC condition as compared to the WT samples. 
+Retrieved from the cuff_data object is all the information on the specific gene and bar plots were then generated to analyse expression levels in the gene of interest, the MLH1 (gene1). At gene level, MLH1 shows slightly greater association in terms of FPKM however with this differs at transcript levels.  It is higher in the HNPCC condition for all isoform samples except for P28502, similarly with TSS22230 and NM_001167619 in the CDS and TSS sites. Moreover, there is constant FPKM in the HNPCC condition as compared to the WT samples. 
 
  
  
