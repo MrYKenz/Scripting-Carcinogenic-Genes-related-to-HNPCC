@@ -1,5 +1,6 @@
 # Scripting-Carcinogenic-Genes-related-to-HNPCC :microscope:
-Differential Expression Analysis of Carcinogenic Genes in R language used in a Bioinformatics Experiment
+Differential Expression Analysis of Carcinogenic Genes in R language used as part of a Bioinformatics Experiment
+---
 
 The finishing touch in the Tuxedo workflow, cummerbund, has been used to analyse, manipulate, and visualise the output of cufflinks represented in the database using the ggplot2 package. The data was first analysed at gene level before plotting distributions of expression data for genes, splice isoforms, TSS groups or CDS groups. 
 
